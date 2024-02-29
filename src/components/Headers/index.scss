@@ -1,0 +1,28 @@
+@import "../../assests/_mixins.scss";
+
+.headercontainer {
+  height: 68px;
+  background-color: #001529;
+  color: #ffffff;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0px 20px;
+}
+
+.user-profile-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: $font-size;
+}
+
+.user-profile-div img {
+  cursor: pointer;
+}
