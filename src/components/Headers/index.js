@@ -11,7 +11,7 @@ const Header = () => {
     <div className="headercontainer">
       <div className="header">
         <div>
-          <img src={MigxLogo} alt="logo" />
+          <img src={MigxLogo} height="18px" alt="logo" />
         </div>
         <div className="user-profile-div">
           <img src={Icon1} alt="logo" />

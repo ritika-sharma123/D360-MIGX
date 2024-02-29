@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
-import { Link, useNavigate } from "react-router-dom";
 
 const Data = [
   {
@@ -42,19 +41,13 @@ const Data = [
 ];
 
 const SideNav = () => {
-  const handleClick = () => {};
   return (
     <>
       <div className="side-nav">
         {Data.map((i) => {
           return (
             <div className="nav-button-container">
-              <SubMenuButton
-                name={i.name}
-                image={i.image}
-                path={i.path}
-                onClick={() => handleClick(i.path)}
-              >
+              <SubMenuButton name={i.name} image={i.image} path={i.path}>
                 {i}
               </SubMenuButton>
             </div>

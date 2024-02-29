@@ -13,6 +13,12 @@ const Layout = () => {
       <Header />
       <div className="nav-content">
         <SideNav />
+        <div
+          style={{
+            width: 2,
+            backgroundColor: "#e5e5e56e",
+          }}
+        ></div>
         <Content>
           <Routes>
             <Route path="/projects" element={<Projects />} />

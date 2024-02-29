@@ -1,14 +1,23 @@
 @import "../../assests/mixins";
 .nav-button {
-  padding: 5px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
 }
 
-.button {
+.nav-button img:hover {
+  fill: $primary-color;
+}
+
+.link {
   background-color: transparent !important;
   border: none;
   padding: 5px 16px;
+  text-decoration: none;
+  color: inherit;
   width: 100%;
   cursor: pointer;
-  color: $primary-color;
   font-size: $font-size;
+  height: 40px;
 }
