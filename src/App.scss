@@ -3,3 +3,82 @@
 .heading {
   color: $primary-color;
 }
+:root {
+  --button-background-color: #ff7a45;
+  --font-family: "Anek Devanagari";
+  --font-size: "18px";
+
+  /* colors */
+  --grey: #f5f5f5;
+  --blue: #1890ff;
+  --white: #ffffff;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  text-align: center;
+}
+
+.home > h1 {
+  margin: 0px;
+  padding: 8px;
+  line-height: 50px;
+  color: #000000d9;
+}
+.home {
+  background-color: #ffffff; /* Used if the image is unavailable */
+  margin-left: 280px;
+  margin-top: 0px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
