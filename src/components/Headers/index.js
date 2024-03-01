@@ -1,10 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import "./index.scss";
-import MigxLogo from "../../images/MigXpressDevelopmentPortal.png";
-import Avatar from "../../images/Avatar (1).png";
-import Icon1 from "../../images/Icon-Wrapper (1).png";
-import Icon2 from "../../images/Icon-Wrapper.png";
+import MigxLogo from "../../assets/images/MigXpressDevelopmentPortal.png";
+import Avatar from "../../assets/images/Avatar.png";
+import Icon1 from "../../assets/images/Icon-Wrapper.png";
+import Icon2 from "../../assets/images/Icon-Wrapper1.png";
 
 const Header = () => {
   return (

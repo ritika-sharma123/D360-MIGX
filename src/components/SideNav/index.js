@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
 import { Link } from "react-router-dom";
-import Dashboard from "../../images/Dashboard.svg";
+import Dashboard from "../../assets/images/Dashboard.svg";
 
 const Data = [
   {
