@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
+import { Link } from "react-router-dom";
+import Dashboard from "../../images/Dashboard.svg";
 
 const Data = [
   {
@@ -33,26 +35,32 @@ const Data = [
     image: "",
     path: "",
   },
-  {
-    name: "Logout",
-    image: "",
-    path: "",
-  },
 ];
 
 const SideNav = () => {
   return (
     <>
       <div className="side-nav">
-        {Data.map((i) => {
+        {Data.map((i, index) => {
           return (
-            <div className="nav-button-container">
-              <SubMenuButton name={i.name} image={i.image} path={i.path}>
-                {i}
-              </SubMenuButton>
-            </div>
+            <Link to={`/${i.path}`} className="link nav-button-container">
+              <div className="nav-button-div">
+                <SubMenuButton
+                  key={index}
+                  name={i.name}
+                  image={i.image}
+                  path={i.path}
+                ></SubMenuButton>
+              </div>
+            </Link>
           );
         })}
+        <Link className="logout-link nav-button-container" to="/logout">
+          <div className="logout-div">
+            <img height="15px" width="15px" src={Dashboard} alt="o" />
+            <span>Logout</span>
+          </div>
+        </Link>
       </div>
     </>
   );

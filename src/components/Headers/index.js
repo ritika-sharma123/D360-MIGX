@@ -14,8 +14,8 @@ const Header = () => {
           <img src={MigxLogo} height="18px" alt="logo" />
         </div>
         <div className="user-profile-div">
-          <img src={Icon1} alt="logo" />
           <img src={Icon2} alt="logo" />
+          <img src={Icon1} alt="logo" />
           <div className="user-profile-div">
             <img src={Avatar} alt="logo" />
             <span>Deepti Tiwari</span>
