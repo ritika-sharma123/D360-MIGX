@@ -3,9 +3,10 @@ import Header from "../Headers";
 import "./index.scss";
 import SideNav from "../SideNav";
 import Content from "../Content";
-import Projects from "../../pages/Project";
+import Projects from "../../pages/Project/AllProjects";
 import { Route, Router, Routes } from "react-router-dom";
 import Sources from "../../pages/Sources";
+import CreateProject from "./../../pages/Project/CreateProjects";
 
 const Layout = () => {
   return (
@@ -22,6 +23,7 @@ const Layout = () => {
         <Content>
           <Routes>
             <Route path="/projects" element={<Projects />} />
+            <Route path="/createproject" element={<CreateProject />} />
             <Route path="/sources" element={<Sources />} />
           </Routes>
         </Content>

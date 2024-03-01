@@ -3,31 +3,37 @@ import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
 import { Link } from "react-router-dom";
 import Dashboard from "../../assets/images/Dashboard.svg";
-
+import {
+  DashboardOutlined,
+  DatabaseOutlined,
+  BranchesOutlined,
+  FileOutlined,
+  LogoutOutlined,
+} from "@ant-design/icons";
 const Data = [
   {
     name: "Projects",
-    image: "",
+    image: DashboardOutlined,
     path: "projects",
   },
   {
     name: "Sources",
-    image: "",
+    image: DatabaseOutlined,
     path: "sources",
   },
   {
     name: "Targets",
-    image: "",
+    image: BranchesOutlined,
     path: "targets",
   },
   {
     name: "Reports & Dashboards",
     image: "",
-    path: "",
+    path: FileOutlined,
   },
   {
     name: "Administration",
-    image: "",
+    image: LogoutOutlined,
     path: "",
   },
   {
