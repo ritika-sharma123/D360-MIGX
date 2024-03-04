@@ -1,15 +1,17 @@
 import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React, { useState } from "react";
-import Input from "../../components/Input";
-import Button from "../../components/Button";
+import Input from "../../../components/Input";
+import Button from "../../../components/Button";
 import styled from "styled-components";
 import "./index.css";
 //import EyeInvisible from "../../images/EyeInvisible.png";
 //import VisibilityIcon from "@mui/icons-material/Visibility";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../../assets/images/Logo.png";
 import { useForm } from "react-hook-form";
-import Label from "../../components/Label";
-import LoginButton from "../../components/LoginButton";
+import Label from "../../../components/Label";
+import LoginButton from "../../../components/LoginButton";
+import { loginAsync } from "../../../lib";
+import { useDispatch, useSelector } from "react-redux";
 
 const LoginCardDiv = styled.div`
   width: 100%;
@@ -71,13 +73,15 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const LoginPage = ({ onLogin }) => {
+const Login = ({ onLogin }) => {
   const [creds, setCreds] = useState({
     userName: "",
     passWord: "",
   });
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  let dispatch = useDispatch();
+  const loginResponse = useSelector((state) => state.login.loginResponse);
 
   const showPassword = () => {
     setIsPasswordVisible(!isPasswordVisible);
@@ -109,7 +113,12 @@ const LoginPage = ({ onLogin }) => {
   });
 
   const onSubmit = (data) => {
-    console.log(data)
+    let postData = JSON.stringify({
+      username: data.id,
+      password: data.password,
+      
+    });
+    dispatch(loginAsync(postData));
   }
   return (
     <div>
@@ -207,7 +216,7 @@ const LoginPage = ({ onLogin }) => {
               }
             />
             {errors.password && <div className={"errorMsg"}>{errors.password.message}</div>}
-            <LoginButton name="Continue" color="#ffff" backgroundColor="#ff7a45" onClick={()=>onLogin()} />
+            <LoginButton name="Continue" color="#ffff" backgroundColor="#ff7a45"  />
           </form>
           <ForgotPasswordText>
             <span>Forgot Password</span>
@@ -223,4 +232,4 @@ const LoginPage = ({ onLogin }) => {
   );
 };
 
-export default LoginPage;
+export default Login;
