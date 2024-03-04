@@ -4,12 +4,14 @@ import MigxLogo from "../../assets/images/MigXpressDevelopmentPortal.png";
 import Avatar from "../../assets/images/Avatar.png";
 import Icon1 from "../../assets/images/Icon-Wrapper.png";
 import Icon2 from "../../assets/images/Icon-Wrapper1.png";
+import Logo from "../../assets/images/Coforge-logo-Coral-White.svg";
 
 const Header = () => {
   return (
     <div className="headercontainer">
       <div className="header">
-        <div>
+        <div className="header">
+          <img src={Logo} alt="logo" height="78px" />
           <img src={MigxLogo} height="18px" alt="logo" />
         </div>
         <div className="user-profile-div">

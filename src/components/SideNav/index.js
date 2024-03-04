@@ -3,36 +3,41 @@ import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
 import { Link } from "react-router-dom";
 import Dashboard from "../../assets/images/Dashboard.svg";
-
+import Logout from "../../assets/images/Logout.svg";
+import Bar from "../../assets/images/Bars.svg";
+import Control from "../../assets/images/Control.svg";
+import Database from "../../assets/images/Database.svg";
+import Question from "../../assets/images/Question.svg";
+import User from "../../assets/images/User.svg";
 const Data = [
   {
     name: "Projects",
-    image: "",
+    image: Dashboard,
     path: "projects",
   },
   {
     name: "Sources",
-    image: "",
+    image: Database,
     path: "sources",
   },
   {
     name: "Targets",
-    image: "",
+    image: User,
     path: "targets",
   },
   {
     name: "Reports & Dashboards",
-    image: "",
+    image: Control,
     path: "",
   },
   {
     name: "Administration",
-    image: "",
+    image: Bar,
     path: "",
   },
   {
     name: "Help",
-    image: "",
+    image: Question,
     path: "",
   },
 ];
@@ -57,7 +62,7 @@ const SideNav = () => {
         })}
         <Link className="logout-link nav-button-container" to="/logout">
           <div className="logout-div">
-            <img height="15px" width="15px" src={Dashboard} alt="o" />
+            <img height="15px" width="15px" src={Logout} alt="o" />
             <span>Logout</span>
           </div>
         </Link>
