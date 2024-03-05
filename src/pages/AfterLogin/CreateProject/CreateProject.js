@@ -1,6 +1,6 @@
 import React from "react";
 import BreadCrumbs from "./../../../components/BreadCrumbs";
-import ProjectStep from "../../ProcessStep";
+import ProcessStep from "../../ProcessStep";
 import "./CreateProject.scss";
 
 const CreateProject = () => {
@@ -13,7 +13,7 @@ const CreateProject = () => {
       <BreadCrumbs breadData={breadData} />
       <div className="create-project">
         <h3>Create Projects</h3>
-        <ProjectStep />
+        <ProcessStep />
       </div>
     </div>
   );
