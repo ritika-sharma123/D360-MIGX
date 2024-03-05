@@ -8,6 +8,7 @@ import { Navigate, Route, Router, Routes } from "react-router-dom";
 import Sources from "../../pages/AfterLogin/Sources";
 import CreateProject from "./../../pages/AfterLogin/CreateProject";
 import { Login } from "../../pages/BeforeLogin";
+import Target from "../../pages/AfterLogin/Target/Target";
 
 const Layout = () => {
   return (
@@ -27,6 +28,7 @@ const Layout = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/createproject" element={<CreateProject />} />
             <Route path="/sources" element={<Sources />} />
+            <Route path="/targets" element={<Target />} />
           </Routes>
         </Content>
       </div>
