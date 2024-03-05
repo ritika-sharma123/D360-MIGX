@@ -1,7 +1,9 @@
+import { Login } from "./pages/BeforeLogin";
 import {
-    Login,
-  } from "./pages/BeforeLogin";
-
+  CreateProject,
+  Projects
+} from "./pages/AfterLogin";
+import Layout from "./components/Layout";
 
 /* 
     For After auth route
@@ -12,13 +14,28 @@ import {
 */
 
 const page404 = () => {
-    return <h1>404</h1>
+  return <h1>404</h1>
 }
 
 export const routes = [
   {
-    path: "/login",
+    path: "/",
     component: Login,
+    exact: false,
+  },
+  {
+    path: "/createproject",
+    component: CreateProject,
+    exact: true,
+  },
+  {
+    path: "/Projects",
+    component: Projects,
+    exact: true,
+  },
+  {
+    path: "/Layout",
+    component: Layout,
     exact: true,
   },
   {

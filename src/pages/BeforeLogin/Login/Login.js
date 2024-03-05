@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
 import "./index.css";
 //import EyeInvisible from "../../images/EyeInvisible.png";
 //import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -12,6 +13,8 @@ import Label from "../../../components/Label";
 import LoginButton from "../../../components/LoginButton";
 import { loginAsync } from "../../../lib";
 import { useDispatch, useSelector } from "react-redux";
+import { redirect, useLocation } from "react-router";
+import Storage from "../../../services/Storage";
 
 const LoginCardDiv = styled.div`
   width: 100%;
@@ -82,7 +85,7 @@ const Login = ({ onLogin }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   let dispatch = useDispatch();
   const loginResponse = useSelector((state) => state.login.loginResponse);
-
+  const navigate = useNavigate();
   const showPassword = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
@@ -114,11 +117,20 @@ const Login = ({ onLogin }) => {
 
   const onSubmit = (data) => {
     let postData = JSON.stringify({
-      username: data.id,
+      username: data.username,
       password: data.password,
-      
+
     });
-    dispatch(loginAsync(postData));
+    console.log(postData)
+    //navigate("/Layout")
+    window.location.reload();
+    Storage.setItem("user", postData);
+    if (postData.username === "admin" && postData.password === "123456") {
+      Storage.setItem("user", postData);
+      dispatch(loginAsync(postData));
+      //  window.location.reload();
+    }
+
   }
   return (
     <div>
@@ -179,17 +191,17 @@ const Login = ({ onLogin }) => {
             <Input
               labelText="Username"
               value={creds.userName}
-              onChange={(e) => handleInput(e, "userName")}
-              reference={register("userName", {
+              onChange={(e) => handleInput(e, "username")}
+              reference={register("username", {
                 required: "Username field is required.",
-                name: "userName",
+                name: "username",
                 pattern: {
                   value: /^\S*$/,
                   message: `Please enter valid text`,
                 },
               })}
             />
-            {errors.userName && <div className={"errorMsg"}>{errors.userName.message}</div>}
+            {errors.username && <div className={"errorMsg"}>{errors.username.message}</div>}
             <Input
               type="password"
               labelText="Password"
@@ -216,7 +228,7 @@ const Login = ({ onLogin }) => {
               }
             />
             {errors.password && <div className={"errorMsg"}>{errors.password.message}</div>}
-            <LoginButton name="Continue" color="#ffff" backgroundColor="#ff7a45"  />
+            <LoginButton name="Continue" color="#ffff" backgroundColor="#ff7a45" />
           </form>
           <ForgotPasswordText>
             <span>Forgot Password</span>

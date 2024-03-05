@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import Dashboard from "../../assets/images/Dashboard.svg";
 
-const SubMenuButton = ({ name }) => {
+const SubMenuButton = ({ name, image }) => {
   return (
     <div className="nav-button">
       <img height="15px" width="15px" src={Dashboard} alt="o" />
