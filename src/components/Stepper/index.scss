@@ -1,0 +1,24 @@
+@import "../../assets/scss/mixins";
+
+.stepper-div {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  border: 1.5px solid $primary-color;
+  color: $white;
+  padding: 2px;
+}
+
+.stepper {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $primary-color;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-num {
+}

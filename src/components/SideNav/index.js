@@ -3,42 +3,41 @@ import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
 import { Link, NavLink } from "react-router-dom";
 import Dashboard from "../../assets/images/Dashboard.svg";
-import {
-  DashboardOutlined,
-  DatabaseOutlined,
-  BranchesOutlined,
-  FileOutlined,
-  LogoutOutlined,
-} from "@ant-design/icons";
+import Logout from "../../assets/images/Logout.svg";
+import Bar from "../../assets/images/Bars.svg";
+import Control from "../../assets/images/Control.svg";
+import Database from "../../assets/images/Database.svg";
+import Question from "../../assets/images/Question.svg";
+import User from "../../assets/images/User.svg";
 const Data = [
   {
     name: "Projects",
-    image: DashboardOutlined,
+    image: Dashboard,
     path: "projects",
   },
   {
     name: "Sources",
-    image: DatabaseOutlined,
+    image: Database,
     path: "sources",
   },
   {
     name: "Targets",
-    image: BranchesOutlined,
+    image: User,
     path: "targets",
   },
   {
     name: "Reports & Dashboards",
-    image: "",
-    path: FileOutlined,
+    image: Control,
+    path: "",
   },
   {
     name: "Administration",
-    image: LogoutOutlined,
+    image: Bar,
     path: "",
   },
   {
     name: "Help",
-    image: "",
+    image: Question,
     path: "",
   },
 ];
@@ -63,7 +62,7 @@ const SideNav = () => {
         })}
         <NavLink className="logout-link nav-button-container" to="/logout">
           <div className="logout-div">
-            <img height="15px" width="15px" src={Dashboard} alt="o" />
+            <img height="15px" width="15px" src={Logout} alt="o" />
             <span>Logout</span>
           </div>
         </NavLink>
