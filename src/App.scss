@@ -1,5 +1,17 @@
 @import "./assets/scss/mixins";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --progress-bar-width: 50px;
+  --progress-bar-height: 50px;
+  --font-size: 2rem;
+}
+
 body {
   font-family: $primary-font;
 }
