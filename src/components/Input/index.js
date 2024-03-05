@@ -1,10 +1,10 @@
 import "./index.scss";
-const Input = ({ labelText, inputType, handeChane }) => {
+const Input = ({ labelText, inputType, handeChane,reference }) => {
   return (
     <>
       <div className="input-container">
         <label>{labelText}</label>
-        <input type={inputType} onChange={handeChane}></input>
+        <input type={inputType} onChange={handeChane} {...reference}></input>
       </div>
     </>
   );

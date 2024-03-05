@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import SubMenuButton from "../SubMenuButton";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Dashboard from "../../assets/images/Dashboard.svg";
 import Logout from "../../assets/images/Logout.svg";
 import Bar from "../../assets/images/Bars.svg";
@@ -48,7 +48,7 @@ const SideNav = () => {
       <div className="side-nav">
         {Data.map((i, index) => {
           return (
-            <Link to={`/${i.path}`} className="link nav-button-container">
+            <NavLink to={`/${i.path}`} className="link nav-button-container">
               <div className="nav-button-div">
                 <SubMenuButton
                   key={index}
@@ -57,15 +57,15 @@ const SideNav = () => {
                   path={i.path}
                 ></SubMenuButton>
               </div>
-            </Link>
+            </NavLink>
           );
         })}
-        <Link className="logout-link nav-button-container" to="/logout">
+        <NavLink className="logout-link nav-button-container" to="/logout">
           <div className="logout-div">
             <img height="15px" width="15px" src={Logout} alt="o" />
             <span>Logout</span>
           </div>
-        </Link>
+        </NavLink>
       </div>
     </>
   );

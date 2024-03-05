@@ -1,7 +1,8 @@
 import React from "react";
-import "./index.scss";
 import BreadCrumbs from "./../../../components/BreadCrumbs";
 import ProjectStep from "../../ProcessStep";
+import "./CreateProject.scss";
+
 const CreateProject = () => {
   const breadData = [
     { path: "projects", text: "Project " },

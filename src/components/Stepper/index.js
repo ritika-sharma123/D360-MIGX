@@ -6,11 +6,7 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import Projects from "../../pages/Project/AllProjects";
-import Table from "../Table";
-import Sources from "../../pages/Sources";
+import Sources from "../../pages/AfterLogin/Sources";
 import ProjectForm from "../../pages/Project/ProjectForm";
 
 const ProgressStep = () => {

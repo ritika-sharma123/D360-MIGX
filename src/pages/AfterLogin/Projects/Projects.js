@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../../../components/Button";
 import { useNavigate } from "react-router-dom";
-import "./index.scss";
+// import "./index.scss";
 import Table from "../../../components/Table";
-
+import "./Projects.scss";
+import Union from "../../../images/Union.png";
 const Projects = () => {
   const tableData = [
     {
@@ -33,6 +34,8 @@ const Projects = () => {
   return (
     <>
       <div className="project-container">
+        {/* <Header/>
+        <SideNav/> */}
         <div className="project-heading-part">
           <h2>Project</h2>
           <Button
@@ -40,6 +43,7 @@ const Projects = () => {
             buttonText="Add New Project"
             background="white"
             color="black"
+            image={Union}
           />
         </div>
         <div className="table-container">
