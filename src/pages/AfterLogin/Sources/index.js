@@ -14,11 +14,6 @@ const Sources = () => {
         <InputSelector labelText="Database Name" optionValue={databaseType} />
         <InputSelector labelText="User Name" optionValue={databaseType} />
         <Input inputType="text" labelText="Password" />
-        <div className="source-button-container">
-          <Button buttonText="Next" background="blue" color="white" />
-          <Button buttonText="Previous" background="white" color="black" />
-          <Button buttonText="Cancel" background="white" color="black" />
-        </div>
       </div>
     </div>
   );

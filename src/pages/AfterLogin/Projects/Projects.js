@@ -1,17 +1,11 @@
 import React from "react";
 import Button from "../../../components/Button";
 import { useNavigate } from "react-router-dom";
-import "./Projects.scss";
+// import "./index.scss";
 import Table from "../../../components/Table";
-import SideNav from "../../../components/SideNav";
-import Header from "../../../components/Headers";
+import "./Projects.scss";
 import Union from "../../../images/Union.png";
 const Projects = () => {
-  const naviGate = useNavigate();
-  const addNewProject = () => {
-    naviGate("/createproject");
-    console.log("hi");
-  };
   const tableData = [
     {
       ProjectName: "Project1",
@@ -32,6 +26,11 @@ const Projects = () => {
       TargetDB: "target DB",
     },
   ];
+  const naviGate = useNavigate();
+  const addNewProject = () => {
+    naviGate("/createproject");
+    console.log("hi");
+  };
   return (
     <>
       <div className="project-container">
