@@ -23,8 +23,7 @@ const Layout = () => {
         ></div>
         <Content>
           <Routes>
-          <Route path="/" element={<Navigate replace to="/projects" />} />
-          
+            <Route path="/" element={<Navigate replace to="/projects" />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/createproject" element={<CreateProject />} />
             <Route path="/sources" element={<Sources />} />
