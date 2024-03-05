@@ -5,7 +5,7 @@ import "./Projects.scss";
 import Table from "../../../components/Table";
 import SideNav from "../../../components/SideNav";
 import Header from "../../../components/Headers";
-
+import Union from "../../../images/Union.png";
 const Projects = () => {
   const naviGate = useNavigate();
   const addNewProject = () => {
@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <>
       <div className="project-container">
-      {/* <Header/>
+        {/* <Header/>
         <SideNav/> */}
         <div className="project-heading-part">
           <h2>Project</h2>
@@ -44,6 +44,7 @@ const Projects = () => {
             buttonText="Add New Project"
             background="white"
             color="black"
+            image={Union}
           />
         </div>
         <div className="table-container">
