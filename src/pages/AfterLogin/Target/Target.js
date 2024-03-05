@@ -65,9 +65,9 @@ const Target = () => {
                 },
               })}/>
                 <div className="target-button-container">
-          <Button buttonText="Next" background="blue" color="white" />
+          {/* <Button buttonText="Next" background="blue" color="white" />
           <Button buttonText="Previous" background="white" color="black" />
-          <Button buttonText="Cancel" background="white" color="black" />
+          <Button buttonText="Cancel" background="white" color="black" /> */}
         </div>
       </div>
     </div>

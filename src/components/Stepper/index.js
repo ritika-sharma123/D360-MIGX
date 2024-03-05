@@ -8,6 +8,7 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Sources from "../../pages/AfterLogin/Sources";
 import ProjectForm from "../../pages/Project/ProjectForm";
+import Target from "../../pages/AfterLogin/Target/Target";
 
 const ProgressStep = () => {
   const steps = [
@@ -21,7 +22,7 @@ const ProgressStep = () => {
     },
     {
       label: "Targets",
-      // description: <Projects />,
+       description: <Target />,
     },
   ];
   const [activeStep, setActiveStep] = React.useState(0);
