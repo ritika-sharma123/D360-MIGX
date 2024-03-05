@@ -30,7 +30,8 @@ function App() {
       }
     };
     exec();
-  }, [isLoggedIn]);
+  }, []);
+  console.log(isLoggedIn,user)
   return (
     <div className="container">
       <div className="App">

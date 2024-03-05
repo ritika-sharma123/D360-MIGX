@@ -147,7 +147,7 @@ const Login = ({ onLogin }) => {
                 row
                 aria-labelledby="demo-form-control-label-placement"
                 name="position"
-                defaultValue="top"
+                defaultValue="end"
               >
                 <FormControlLabel
                   value="end"

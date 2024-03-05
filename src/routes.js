@@ -1,8 +1,5 @@
 import { Login } from "./pages/BeforeLogin";
-import {
-  CreateProject,
-  Projects
-} from "./pages/AfterLogin";
+import { CreateProject, Projects, Sources } from "./pages/AfterLogin";
 import Layout from "./components/Layout";
 
 /* 
@@ -14,14 +11,19 @@ import Layout from "./components/Layout";
 */
 
 const page404 = () => {
-  return <h1>404</h1>
-}
+  return <h1>404</h1>;
+};
 
 export const routes = [
   {
     path: "/",
     component: Login,
     exact: false,
+  },
+  {
+    path: "/source",
+    component: Sources,
+    exact: true,
   },
   {
     path: "/createproject",

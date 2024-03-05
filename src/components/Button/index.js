@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./index.scss";
-import Union from "../../images/Union.png";
+
 const ButtonContainer = styled.div`
   background-color: ${(props) =>
     props.background ? props.background : "white"};
@@ -17,6 +17,7 @@ const Button = ({
   background,
   padding,
   color,
+  image,
 }) => {
   return (
     <>
@@ -27,7 +28,8 @@ const Button = ({
         padding={padding}
         color={color}
       >
-        <img src={Union} alt="" width="15" height="15" />
+        {image ? <img src={image} alt="" width="15" height="15" /> : ""}
+
         <ButtonDiv onClick={clickHandler} color={color} className="button-text">
           {buttonText}
         </ButtonDiv>
