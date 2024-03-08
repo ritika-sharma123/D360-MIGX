@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.CheckBox{
+  float: left;
+
+}
+
+.typeIconContainer svg{
+  fill : #d7d413;
+  stroke:#d7d413;
+  color : #d7d413;
+  stroke-width:"4" 
+}
+/* .typeIconContainer svg path{
+  fill:#FF9C6E;
+
+} */

@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setHeader, setBaseURL } from "./lib/constant";
 import { env } from './env';
 import { Login } from "./pages/BeforeLogin";
+import {CustomStepper} from './pages/BeforeLogin'
 import { Container } from "@mui/material";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -34,11 +35,11 @@ function App() {
   console.log(isLoggedIn,user)
   return (
     <div className="container">
+       
       <div className="App">
         {isLoggedIn ? (
           <div>
-            <Layout />
-
+           <Layout />
           </div>
         ) : (
           <Login />
