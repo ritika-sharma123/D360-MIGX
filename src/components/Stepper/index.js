@@ -9,8 +9,9 @@ import Button from "@mui/material/Button";
 import Sources from "../../pages/AfterLogin/Sources";
 import ProjectForm from "../../pages/Project/ProjectForm";
 import Target from "../../pages/AfterLogin/Target/Target";
-import  CreateSchema  from "../../pages/AfterLogin/CreateSchema";
+import CreateSchema from "../../pages/AfterLogin/CreateSchema";
 import SchemaComparison from "../../pages/AfterLogin/SchemaComparison";
+import SchemaMigration from "../../pages/AfterLogin/SchemaMigration";
 
 const ProgressStep = () => {
   const steps = [
@@ -24,15 +25,19 @@ const ProgressStep = () => {
     },
     {
       label: "Targets",
-       description: <Target />,
+      description: <Target />,
     },
     {
       label: "Choose Schema",
-       description: <CreateSchema />,
+      description: <CreateSchema />,
     },
     {
       label: "Schema Comparison",
-       description: <SchemaComparison />,
+      description: <SchemaComparison />,
+    },
+    {
+      label: "Schema Migration",
+      description: <SchemaMigration />,
     },
   ];
   const [activeStep, setActiveStep] = React.useState(0);
