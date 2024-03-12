@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import "./index.css";
 //import EyeInvisible from "../../images/EyeInvisible.png";
 //import VisibilityIcon from "@mui/icons-material/Visibility";
-import Logo from "../../../assets/images/Logo.png";
+import Logo from "../../../assets/images/LogoMigxpress.png";
 import { useForm } from "react-hook-form";
 import Label from "../../../components/Label";
 import LoginButton from "../../../components/LoginButton";

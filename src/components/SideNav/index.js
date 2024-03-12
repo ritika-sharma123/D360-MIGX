@@ -15,16 +15,16 @@ const Data = [
     image: Dashboard,
     path: "projects",
   },
-  {
-    name: "Sources",
-    image: Database,
-    path: "sources",
-  },
-  {
-    name: "Targets",
-    image: User,
-    path: "targets",
-  },
+  // {
+  //   name: "Sources",
+  //   image: Database,
+  //   path: "sources",
+  // },
+  // {
+  //   name: "Targets",
+  //   image: User,
+  //   path: "targets",
+  // },
   {
     name: "Reports & Dashboards",
     image: Control,

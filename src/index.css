@@ -15,8 +15,9 @@ code {
 .CheckBox {
   float: left;
 }
-.typeIconContainer svg path {
+.typeIconContainer svg{
   fill: #FF9C6E;
+  margin-bottom: -10px;
 }
 
 /* .typeIconContainer svg path{

@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import MigxLogo from "../../assets/images/MigXpressDevelopmentPortal.png";
+import MigxLogo from "../../assets/images/MigXpressDeveloper.png";
 import Avatar from "../../assets/images/Avatar.png";
 import Icon1 from "../../assets/images/Icon-Wrapper.png";
 import Icon2 from "../../assets/images/Icon-Wrapper1.png";
