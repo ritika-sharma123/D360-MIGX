@@ -2,10 +2,11 @@ import React from "react";
 import Summary from "../../../components/Summary";
 
 const SchemaMigration = () => {
+  const handleSummaryInput = () => {};
   return (
     <>
-      <Summary />
-      <Summary />
+      <Summary onChange={handleSummaryInput} />
+      <Summary onChange={handleSummaryInput} />
     </>
   );
 };
