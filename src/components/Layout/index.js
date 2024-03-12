@@ -9,6 +9,7 @@ import Sources from "../../pages/AfterLogin/Sources";
 import CreateProject from "./../../pages/AfterLogin/CreateProject";
 import { Login } from "../../pages/BeforeLogin";
 import Target from "../../pages/AfterLogin/Target/Target";
+import Stepper from "./../../pages/AfterLogin/Stepper";
 
 const Layout = () => {
   return (
@@ -29,6 +30,7 @@ const Layout = () => {
             <Route path="/createproject" element={<CreateProject />} />
             <Route path="/sources" element={<Sources />} />
             <Route path="/targets" element={<Target />} />
+            <Route path="/stepper" element={<Stepper />} />
           </Routes>
         </Content>
       </div>

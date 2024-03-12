@@ -1,5 +1,5 @@
 import { Login } from "./pages/BeforeLogin";
-import { CreateProject, Projects, Sources } from "./pages/AfterLogin";
+import { CreateProject, Projects, Sources, Stepper } from "./pages/AfterLogin";
 import Layout from "./components/Layout";
 
 /* 
@@ -23,6 +23,11 @@ export const routes = [
   {
     path: "/source",
     component: Sources,
+    exact: true,
+  },
+  {
+    path: "/stepper",
+    component: Stepper,
     exact: true,
   },
   {
