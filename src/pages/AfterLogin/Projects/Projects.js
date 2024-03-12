@@ -28,8 +28,7 @@ const Projects = () => {
   ];
   const naviGate = useNavigate();
   const addNewProject = () => {
-    naviGate("/createproject");
-    console.log("hi");
+    naviGate("/stepper");
   };
   return (
     <>
