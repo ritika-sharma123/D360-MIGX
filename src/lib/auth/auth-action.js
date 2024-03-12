@@ -8,7 +8,7 @@ export const loginResetAction = createAction("AUTH.LOGIN_RESET");
 export const loginAsync = (loginData) => {
     return (dispatch) => {
         httpClient
-            .get("/login", loginData)
+            .get("/todos/1", loginData)
             .then((response) => {
               console.log(response)
                 if (response) {

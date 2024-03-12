@@ -121,17 +121,14 @@ const Login = ({ onLogin }) => {
       password: data.password,
 
     });
-    console.log(postData)
-    //navigate("/Layout")
-    window.location.reload();
-    Storage.setItem("user", postData);
-    if (postData.username === "admin" && postData.password === "123456") {
+    if (JSON.parse(postData).username === 'admin' && JSON.parse(postData).password === '123456') {
       Storage.setItem("user", postData);
       dispatch(loginAsync(postData));
-      //  window.location.reload();
+      window.location.reload();
     }
 
   }
+
   return (
     <div>
       <HeaderContainer>

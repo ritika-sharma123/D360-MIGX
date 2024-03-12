@@ -1,6 +1,6 @@
 export const appConfigLocal = {
-    loginUrl: "http://localhost:8000",
-    apiUrl: "http://localhost:8000",
+    loginUrl: "https://jsonplaceholder.typicode.com/",
+    apiUrl: "https://jsonplaceholder.typicode.com/",
     imgPath: "/assets/images/",
     path: "assets/json",
     serverPath: "http://localhost:8000/login ",
