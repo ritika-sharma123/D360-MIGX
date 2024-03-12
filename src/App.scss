@@ -20,3 +20,15 @@ body {
 .container {
   height: 100vh;
 }
+.CheckBox {
+  float: left;
+}
+.typeIconContainer svg path {
+  fill: #FF9C6E;
+  margin-bottom: -10px;
+}
+
+.TreeNode{
+   display: flex !important;
+    align-items: center !important;
+}
