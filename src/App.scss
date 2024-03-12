@@ -10,10 +10,11 @@
   --progress-bar-width: 50px;
   --progress-bar-height: 50px;
   --font-size: 2rem;
+  --font-family: "Anek Devanagari";
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $primary-font !important;
 }
 
 .container {
